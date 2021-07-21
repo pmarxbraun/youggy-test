@@ -1,0 +1,21 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--youggy-red-color);
+}
+
+.main h1,
+.main p {
+  color: #fff;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 920px) {
+  .main {
+    text-align: center;
+  }
+  .imageWrapper {
+    width: 180px;
+    margin: auto;
+  }
+}

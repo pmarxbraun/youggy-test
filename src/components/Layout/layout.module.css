@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.children {
+  flex: 1 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.wrapperSnap {
+  padding-top: 10vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  margin: 0;
+  height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.wrapperSnap::-webkit-scrollbar {
+  display: none;
+}

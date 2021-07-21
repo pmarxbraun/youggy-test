@@ -1,0 +1,60 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0 10vw;
+}
+
+.main > div {
+  max-width: 520px;
+}
+
+.right {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.main h1,
+.main h2,
+.main p,
+.main a {
+  color: #000;
+  text-align: left;
+}
+
+@media screen and (max-width: 920px) {
+  .main h1,
+  .main h2,
+  .main p,
+  .main a {
+    text-align: center;
+  }
+}
+
+.imageWrapper {
+  display: block;
+}
+
+@media screen and (max-width: 920px) {
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.storebadges a:first-of-type {
+  margin-right: var(--space-xs);
+}
+
+@media screen and (max-width: 920px) {
+  .storebadges {
+    justify-content: center;
+  }
+  .storebadges a:first-of-type {
+    margin-right: 0;
+  }
+}

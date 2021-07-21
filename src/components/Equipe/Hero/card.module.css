@@ -1,0 +1,68 @@
+.card:hover {
+  cursor: default;
+}
+
+.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (min-width: 920px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mobileCard {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 919px) {
+  .card {
+    display: none;
+  }
+  .mobileCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+  }
+}
+
+.img {
+  height: 400px;
+  width: 250px;
+}
+
+.desc {
+  color: grey;
+}
+
+@media screen and (max-width: 920px) {
+  .name,
+  .desc {
+    text-align: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+  flex-direction: row;
+  margin-left: var(--space-md);
+  width: 25vw;
+}
+
+.visible::after {
+  content: url("data:image/svg+xml,%3Csvg width='12' height='144' viewBox='0 0 12 144' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 143L1.00032 80.8199L11 72.0001L1.00032 63.1802L1.00032 0.999998' stroke='black' stroke-width='0.5' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+  padding-left: var(--space-xs);
+  padding-right: var(--space-xs);
+}
+
+.title {
+  color: var(--youggy-red-color);
+}

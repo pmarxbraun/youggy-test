@@ -1,0 +1,12 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--youggy-main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  max-width: 90%;
+}

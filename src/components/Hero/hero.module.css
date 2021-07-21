@@ -1,0 +1,22 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--youggy-main-color);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main > div {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 920px) {
+  .main {
+    align-content: center;
+  }
+  .main > div {
+    max-width: 80%;
+  }
+}

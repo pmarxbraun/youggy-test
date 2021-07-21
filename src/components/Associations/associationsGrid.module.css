@@ -1,0 +1,38 @@
+.main {
+  padding: 10vh 7vw;
+  min-height: 90vh;
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  align-items: stretch;
+}
+
+.card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 110px 0 50px 0;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-md);
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.producer {
+  font-style: normal;
+  font-size: var(--text-base);
+  line-height: 22px;
+  color: #000000;
+  opacity: 0.4;
+}

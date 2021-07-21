@@ -1,0 +1,40 @@
+.wrapper {
+  margin-bottom: var(--space-lg);
+  text-align: right;
+}
+
+@media screen and (max-width: 920px) {
+  .wrapper {
+    text-align: center;
+  }
+}
+
+.wrapper a {
+  text-decoration: unset;
+}
+
+.red {
+  border: 1.5px solid var(--youggy-red-color);
+  box-sizing: border-box;
+  border-radius: 1000px;
+  color: var(--youggy-red-color) !important;
+  transition: background-color 100ms ease-in;
+}
+
+.red:hover {
+  background-color: var(--youggy-red-color);
+  color: #fff !important;
+}
+
+.yellow {
+  border: 1.5px solid var(--youggy-main-color);
+  box-sizing: border-box;
+  border-radius: 1000px;
+  color: var(--youggy-main-color) !important;
+  transition: background-color 100ms ease-in;
+}
+
+.yellow:hover {
+  background-color: var(--youggy-main-color);
+  color: #fff !important;
+}
